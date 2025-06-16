@@ -1,0 +1,35 @@
+PS C:\Users\shuji\OneDrive\デスクトップ\DElesson> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\shuji\OneDrive\デスクトップ\DElesson  
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/06/16     15:39                git_challenge  
+
+
+PS C:\Users\shuji\OneDrive\デスクトップ\DElesson> cd C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge
+PS C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge>ggit init
+Initialized empty Git repository in C:/Users/shuji/OneDrive/デス クトップ/DElesson/git_challenge/.git/
+PS C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge>ggit add .
+PS C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge> git commit -m "1回目のコミット"
+[main (root-commit) d3cb019] 1回目のコミット
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge>ggit add .
+PS C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge> git commit -m "2回目のコミット"
+[main 0e50c5d] 2回目のコミット
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge> git log
+commit 0e50c5dc70f797c78dcc476a2d28eb8692924177 (HEAD -> main)
+Author: Misasa-san <misasatgnw@gmail.com>
+Date:   Mon Jun 16 15:43:32 2025 +0900
+
+    2回目のコミット
+
+commit d3cb0198b91def9c2cf6e4a77378f9c56ab90926
+Author: Misasa-san <misasatgnw@gmail.com>
+Date:   Mon Jun 16 15:42:24 2025 +0900
+
+    1回目のコミット
