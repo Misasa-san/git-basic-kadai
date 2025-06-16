@@ -1,25 +1,36 @@
-PS C:\Users\shuji\OneDrive\デスクトップ\DElesson> mkdir git_challenge
-
-
-    ディレクトリ: C:\Users\shuji\OneDrive\デスクトップ\DElesson  
+    ディレクトリ: C:\Users\shuji\OneDrive\デスクトップ\DElesson
 
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
-d-----        2025/06/16     15:39                git_challenge  
+d-----        2025/06/16     16:34                git_challenge
 
 
 PS C:\Users\shuji\OneDrive\デスクトップ\DElesson> cd C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge
+PS C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge> echo "Hello, world!" >> hello_world.txt
 PS C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge> git init
-Reinitialized existing Git repository in C:/Users/shuji/OneDrive/デスクトッ プ/DElesson/git_challenge/.git/
-PS C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge> git add .
-PS C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge> git commit -m "hello_world.txtにHello, world!を追加"
-[main ccbf758] hello_world.txtにHello, world!を追加
- 1 file changed, 1 deletion(-)
-PS C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge> git add .
-PS C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge> git commit -m "hello_world.txtに日本語訳を追加"
-[main 5047242] hello_world.txtに日本語訳を追加
- 1 file changed, 1 insertion(+)
-PS C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge> git log --oneline
-5047242 (HEAD -> main) hello_world.txtに日本語訳を追加
-ccbf758 hello_world.txtにHello, world!を追加
+Initialized empty Git repository in C:/Users/shuji/OneDrive/デスクトップ/DElesson/git_challenge/.git/
+PS C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge> git add C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge\hello_world.txt     
+PS C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge> git commit -m "hello_world.txtにHello, world!を追加し、作成"
+[main (root-commit) 697409e] hello_world.txtにHello, world!を追加し、作成
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge> git add C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge\hello_world.txt     
+PS C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge> git commit -m "hello_world.txtに日本語訳を追加"                                         
+[main ca4bb84] hello_world.txtに日本語訳を追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge> git log
+commit ca4bb840e625b62eac8c14f2e0df831afc29f85e (HEAD -> main)
+Author: Misasa-san <misasatgnw@gmail.com>
+Date:   Mon Jun 16 16:41:39 2025 +0900
+
+    hello_world.txtに日本語訳を追加
+
+commit 697409ebb9c24deb5962afbadcf4a44657f150df
+Author: Misasa-san <misasatgnw@gmail.com>
+Date:   Mon Jun 16 16:38:09 2025 +0900
+
+    hello_world.txtにHello, world!を追加し、作成
+PS C:\Users\shuji\OneDrive\デスクトップ\DElesson\git_challenge> git log --oneline                                                                       
+ca4bb84 (HEAD -> main) hello_world.txtに日本語訳を追加
+697409e hello_world.txtにHello, world!を追加し、作成
